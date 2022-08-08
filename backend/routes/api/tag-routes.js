@@ -1,5 +1,6 @@
-const router = require('express').Router();
-import { getTags, getTag, createTag, updateTag, deleteTag, } from '../../controllers'
+const express = require('express');
+const router = express.Router();
+const { getTags, getTag, createTag, updateTag, deleteTag, } = require('../../controllers/tagController')
 
 // The `/api/tags` endpoint
 router.route('/').get(getTags).post(createTag)

@@ -1,5 +1,6 @@
-const router = require('express').Router();
-import { getProducts, getProduct, createProduct, updateProduct, deleteProduct } from '../../controllers'
+const express = require('express');
+const router = express.Router();
+const { getProducts, getProduct, createProduct, updateProduct, deleteProduct } = require('../../controllers/productController')
 
 // The `/api/products` endpoint
 router.route('/').get(getProducts).post(createProduct)

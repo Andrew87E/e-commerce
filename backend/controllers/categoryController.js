@@ -1,5 +1,5 @@
-import { Category, Product } from '../models';
-import asyncHandler from 'express-async-handler'
+const { Category, Product } = require('../models');
+const asyncHandler = require('express-async-handler')
 
 const getCategories = asyncHandler(async (req, res) => {
     try {

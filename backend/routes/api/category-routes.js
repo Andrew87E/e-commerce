@@ -1,6 +1,7 @@
-const router = require('express').Router();
+const express = require('express');
+const router = express.Router();
 const { Category, Product } = require('../../models');
-import { getCategories, getCategory, createCategory, updateCategory, deleteCategory } from '../../controllers/categoryController'
+const { getCategories, getCategory, createCategory, updateCategory, deleteCategory } = require('../../controllers/categoryController')
 
 
 // The `/api/categories` endpoint

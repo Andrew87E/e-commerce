@@ -22,6 +22,8 @@ export const ProductCards: React.FC = () => {
   const [isLoading, setLoading] = useState(true);
   const [products, setproducts] = useState<productsType[]>([]);
 
+// fetch()
+
   useEffect(() => {
     axios.get(`http://localhost:3001/api/products`).then((response) => {
       setproducts(response.data);
